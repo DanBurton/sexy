@@ -1,0 +1,53 @@
+name:                sexy
+version:             0.1.0.0
+synopsis:            A Sexier Prelude
+
+-- description:         
+
+homepage:            https://github.com/DanBurton/sexy
+license:             AllRightsReserved
+license-file:        LICENSE
+author:              Dan Burton
+maintainer:          danburton.email@gmail.com
+copyright:           (c) Dan Burton 2012
+
+-- category:            
+build-type:          Simple
+cabal-version:       >=1.8
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Sexy,
+                         Sexy.Data,
+                           Sexy.Data.Basics,
+                           Sexy.Data.Bool,
+                           Sexy.Data.Either,
+                           Sexy.Data.Integer,
+                           Sexy.Data.List,
+                           Sexy.Data.Maybe,
+                           Sexy.Data.String,
+                         Sexy.Classes,
+                           Sexy.Classes.FromInteger,
+                           Sexy.Classes.Plus,
+                           Sexy.Classes.Show,
+                         Sexy.Instances,
+                           Sexy.Instances.FromInteger,
+                             Sexy.Instances.FromInteger.Double,
+                             Sexy.Instances.FromInteger.Int,
+                           Sexy.Instances.Plus,
+                             Sexy.Instances.Plus.Double,
+                             Sexy.Instances.Plus.Int,
+                             Sexy.Instances.Plus.List,
+                           Sexy.Instances.Show,
+                             Sexy.Instances.Show.Bool,
+                             Sexy.Instances.Show.Char,
+                             Sexy.Instances.Show.Double,
+                             Sexy.Instances.Show.Either,
+                             Sexy.Instances.Show.Integer,
+                             Sexy.Instances.Show.Int,
+                             Sexy.Instances.Show.List,
+                             Sexy.Instances.Show.Maybe
+  extensions:          NoImplicitPrelude
+  -- other-modules:       
+  build-depends:       base == 4.5.*
+
