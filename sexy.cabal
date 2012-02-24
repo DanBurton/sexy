@@ -38,6 +38,11 @@ library
                            Sexy.Classes.Applicative,
                            Sexy.Classes.Monad,
                            Sexy.Classes.Category,
+                           Sexy.Classes.Nil,
+                           Sexy.Classes.HasElem,
+                           Sexy.Classes.Cons,
+                           Sexy.Classes.UnconsMay,
+                           Sexy.Classes.Monoid,
                          Sexy.Instances,
                            Sexy.Instances.FromInteger,
                              Sexy.Instances.FromInteger.Double,
@@ -70,6 +75,16 @@ library
                              Sexy.Instances.Monad.Function,
                            Sexy.Instances.Category,
                              Sexy.Instances.Category.Function
+                           Sexy.Instances.Nil,
+                             Sexy.Instances.Nil.List,
+                           Sexy.Instances.HasElem,
+                             Sexy.Instances.HasElem.List,
+                           Sexy.Instances.Cons,
+                             Sexy.Instances.Cons.List,
+                           Sexy.Instances.UnconsMay,
+                             Sexy.Instances.UnconsMay.List,
+                           Sexy.Instances.Monoid,
+                             Sexy.Instances.Monoid.List
   extensions:          NoImplicitPrelude, TypeFamilies
   ghc-options:         -Wall -fno-warn-orphans
   build-depends:       base == 4.5.*
