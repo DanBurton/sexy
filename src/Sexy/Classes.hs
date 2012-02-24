@@ -1,9 +1,7 @@
-module Sexy.Classes (
-    module Sexy.Classes.Show
-  , module Sexy.Classes.FromInteger
-  , module Sexy.Classes.Plus
-  ) where
+module Sexy.Classes (module X) where
 
-import Sexy.Classes.Show
-import Sexy.Classes.FromInteger
-import Sexy.Classes.Plus
+import Sexy.Classes.Show as X
+import Sexy.Classes.FromInteger as X
+import Sexy.Classes.Plus as X
+import Sexy.Classes.Apply as X
+import Sexy.Classes.Functor as X

@@ -1,9 +1,5 @@
-module Sexy (
-    module Sexy.Data
-  , module Sexy.Classes
-  , module Sexy.Instances
-  ) where
+module Sexy (module X) where
 
-import Sexy.Data
-import Sexy.Classes
-import Sexy.Instances
+import Sexy.Data as X
+import Sexy.Classes as X
+import Sexy.Instances ()

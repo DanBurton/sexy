@@ -1,19 +1,12 @@
-module Sexy.Data (
-    module Sexy.Data.Basics
-  , module Sexy.Data.Bool
-  , module Sexy.Data.Either  
-  , module Sexy.Data.Integer  
-  , module Sexy.Data.Maybe
-  , module Sexy.Data.List
-  , module Sexy.Data.String
-  , module GHC.Exts
-  ) where
+module Sexy.Data (module X) where
 
-import Sexy.Data.Basics
-import Sexy.Data.Bool
-import Sexy.Data.Either
-import Sexy.Data.Integer
-import Sexy.Data.Maybe
-import Sexy.Data.List
-import Sexy.Data.String
-import GHC.Exts (Int(..), Word(..), Float(..), Double(..), Char(..))
+import Sexy.Data.Basics as X
+import Sexy.Data.Bool as X
+import Sexy.Data.Either as X
+import Sexy.Data.Integer as X
+import Sexy.Data.Maybe as X
+import Sexy.Data.List as X
+import Sexy.Data.String as X
+import Sexy.Data.Ordering as X
+import Sexy.Data.Unit as X
+import GHC.Exts as X (Int(..), Word(..), Float(..), Double(..), Char(..))

@@ -26,10 +26,14 @@ library
                            Sexy.Data.List,
                            Sexy.Data.Maybe,
                            Sexy.Data.String,
+                           Sexy.Data.Ordering,
+                           Sexy.Data.Unit,
                          Sexy.Classes,
                            Sexy.Classes.FromInteger,
                            Sexy.Classes.Plus,
                            Sexy.Classes.Show,
+                           Sexy.Classes.Apply,
+                           Sexy.Classes.Functor,
                          Sexy.Instances,
                            Sexy.Instances.FromInteger,
                              Sexy.Instances.FromInteger.Double,
@@ -46,8 +50,15 @@ library
                              Sexy.Instances.Show.Integer,
                              Sexy.Instances.Show.Int,
                              Sexy.Instances.Show.List,
-                             Sexy.Instances.Show.Maybe
-  extensions:          NoImplicitPrelude
-  -- other-modules:       
+                             Sexy.Instances.Show.Maybe,
+                           Sexy.Instances.Apply,
+                             Sexy.Instances.Apply.Function,
+                           Sexy.Instances.Functor,
+                             Sexy.Instances.Functor.Function,
+                             Sexy.Instances.Functor.List,
+                             Sexy.Instances.Functor.Maybe,
+                             Sexy.Instances.Functor.Either
+  extensions:          NoImplicitPrelude, TypeFamilies
+  ghc-options:         -Wall -fno-warn-orphans
   build-depends:       base == 4.5.*
 

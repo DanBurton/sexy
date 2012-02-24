@@ -10,6 +10,9 @@ maybe :: (a -> b) -> b -> Maybe a -> b
 maybe f _ (Just x) = f x
 maybe _ x Nothing  = x
 
+-- fromJust = maybe id
 fromJust :: a -> Maybe a -> a
 fromJust _ (Just x) = x
-fromjust x Nothing  = x
+fromJust x Nothing  = x
+
+
