@@ -1,4 +1,4 @@
 module Sexy.Data.String (String) where
 
-import GHC.Exts (Char)
+import GHC.Types (Char)
 type String = [Char]

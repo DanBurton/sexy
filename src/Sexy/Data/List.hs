@@ -4,8 +4,9 @@ module Sexy.Data.List (
   ) where
 
 list :: (a -> v -> v) -> v -> [a] -> v
-list _      myNil []     = myNil
-list myCons myNil (x:xs) = myCons x (list myCons myNil xs)
+list myCons myNil = go
+  where go [] = myNil
+        go (x:xs) = myCons x (go xs)
 
 -- fromCons = list const
 fromCons :: a -> [a] -> a

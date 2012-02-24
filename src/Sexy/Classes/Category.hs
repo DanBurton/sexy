@@ -5,12 +5,12 @@ module Sexy.Classes.Category (
   ) where
 
 
-class Category cat where
-  id :: cat a a
-  (.) :: cat b c -> cat a b -> cat a c
+class Category (~>) where
+  id :: a ~> a
+  (.) :: (b ~> c) -> (a ~> b) -> (a ~> c)
 
-(<<<) :: Category cat => cat b c -> cat a b -> cat a c
+(<<<) :: Category (~>) => (b ~> c) -> (a ~> b) -> (a ~> c)
 (<<<) = (.)
 
-(>>>) :: Category cat => cat a b -> cat b c -> cat a c
+(>>>) :: Category (~>) => (a ~> b) -> (b ~> c) -> (a ~> c)
 a >>> b = b . a

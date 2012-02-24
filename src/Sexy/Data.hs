@@ -9,4 +9,4 @@ import Sexy.Data.List as X
 import Sexy.Data.String as X
 import Sexy.Data.Ordering as X
 import Sexy.Data.Unit as X
-import GHC.Exts as X (Int(..), Word(..), Float(..), Double(..), Char(..))
+import GHC.Types as X (Int(..), Double(..), Char(..))

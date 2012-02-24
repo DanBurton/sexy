@@ -1,10 +1,10 @@
 module Sexy.Data.Bool (
-    Bool(..)
-  , bool
+    bool
   , otherwise
+  , module X
   ) where
 
-data Bool = True | False
+import GHC.Types as X (Bool(..))
 
 bool :: a -> a -> Bool -> a
 bool x _ True  = x

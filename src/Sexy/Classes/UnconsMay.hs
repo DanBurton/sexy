@@ -11,9 +11,10 @@ class HasElem list => UnconsMay list where
   unconsMay :: list -> Maybe (Elem list, list)
 
   foldr :: (Elem list -> b -> b) -> b -> list -> b
-  foldr myCons myNil xs = case unconsMay xs of
-    Nothing -> myNil
-    Just (y,ys) -> myCons y (foldr myCons myNil ys)
+  foldr myCons myNil = go
+    where go xs = case unconsMay xs of
+            Nothing -> myNil
+            Just (y,ys) -> myCons y (foldr myCons myNil ys)
 
   foldr1 :: (a ~ Elem list) => (a -> a -> a) -> list -> Maybe a
   foldr1 myCons xs = case unconsMay xs of
