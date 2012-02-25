@@ -1,7 +1,5 @@
-module Sexy.Classes.Cons (Cons(..), module X) where
-
-import Sexy.Classes.HasElem as X
+module Sexy.Classes.Cons (Cons(..)) where
 
 
-class (HasElem list) => Cons list where
-  (<|) :: Elem list -> list -> list
+class Cons l where
+  (<|) :: a -> l a -> l a

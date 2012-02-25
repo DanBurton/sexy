@@ -2,10 +2,9 @@ module Sexy.Instances.UnconsMay.Maybe () where
 
 import Sexy.Classes (UnconsMay(..))
 import Sexy.Data (Maybe(..), fromJust')
-import Sexy.Instances.HasElem.Maybe ()
 
 
-instance UnconsMay (Maybe a) where
+instance UnconsMay Maybe where
   unconsMay Nothing  = Nothing
   unconsMay (Just x) = Just (x, Nothing)
 

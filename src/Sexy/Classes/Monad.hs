@@ -13,5 +13,5 @@ class (Applicative m) => Monad m where
   (>>=) :: m a -> (a -> m b) -> m b
   x >>= f = join (f <$> x)
 
-(>>) :: m a -> m b -> m b
-f >> g = f >>= (\_ -> g)
+  (>>) :: m a -> m b -> m b
+  f >> g = f >>= (\_ -> g)
