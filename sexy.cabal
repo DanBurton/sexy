@@ -2,8 +2,6 @@ name:                sexy
 version:             0.1.0.0
 synopsis:            A Sexier Prelude
 
--- description:         
-
 homepage:            https://github.com/DanBurton/sexy
 license:             BSD3
 license-file:        LICENSE
@@ -11,131 +9,173 @@ author:              Dan Burton
 maintainer:          danburton.email@gmail.com
 copyright:           (c) Dan Burton 2012
 
--- category:            
+-- category: How do you categorize a Prelude replacement?
 build-type:          Simple
 cabal-version:       >=1.8
 
+source-repository head
+  type:     git
+  location: git://github.com/DanBurton/sexy
+
+-- Warning! This tag doesn't exist yet.
+source-repository this
+  type:     git
+  location: git://github.com/DanBurton/sexy
+  tag:      sexy-0.1.0.0
+
 library
   hs-source-dirs:      src
-  exposed-modules:     Sexy,
-                         Sexy.Data,
-                           Sexy.Data.Basics,
-                           Sexy.Data.Bool,
-                           Sexy.Data.Either,
-                           Sexy.Data.Integer,
-                           Sexy.Data.List,
-                           Sexy.Data.Maybe,
-                           Sexy.Data.String,
-                           Sexy.Data.Ordering,
-                         Sexy.Classes,
-                           Sexy.Classes.BoolC,
-                           Sexy.Classes.OrderingC,
-                           Sexy.Classes.MaybeC,
-                           Sexy.Classes.EitherC,
-                           Sexy.Classes.Empty,
-                           Sexy.Classes.FromInteger,
-                           Sexy.Classes.Plus,
-                           Sexy.Classes.Show,
-                           Sexy.Classes.Apply,
-                           Sexy.Classes.Functor,
-                           Sexy.Classes.Pure,
-                           Sexy.Classes.Applicative,
-                           Sexy.Classes.Monad,
-                           Sexy.Classes.Category,
-                           Sexy.Classes.Nil,
-                           Sexy.Classes.Cons,
-                           Sexy.Classes.UnconsMay,
-                           Sexy.Classes.Monoid,
-                           Sexy.Classes.Eq,
-                           Sexy.Classes.Subtract,
-                         Sexy.Instances,
-                           Sexy.Instances.BoolC,
-                             Sexy.Instances.BoolC.Bool,
-                           Sexy.Instances.OrderingC,
-                             Sexy.Instances.OrderingC.Ordering,
-                           Sexy.Instances.MaybeC,
-                             Sexy.Instances.MaybeC.Maybe,
-                           Sexy.Instances.EitherC,
-                             Sexy.Instances.EitherC.Either,
-                           Sexy.Instances.Empty,
-                             Sexy.Instances.Empty.List,
-                             Sexy.Instances.Empty.Maybe,
-                           Sexy.Instances.FromInteger,
-                             Sexy.Instances.FromInteger.Double,
-                             Sexy.Instances.FromInteger.Int,
-                           Sexy.Instances.Plus,
-                             Sexy.Instances.Plus.Double,
-                             Sexy.Instances.Plus.Int,
-                             Sexy.Instances.Plus.List,
-                             Sexy.Instances.Plus.Function,
-                             Sexy.Instances.Plus.Maybe,
-                             Sexy.Instances.Plus.Either,
-                           Sexy.Instances.Show,
-                             Sexy.Instances.Show.Bool,
-                             Sexy.Instances.Show.Char,
-                             Sexy.Instances.Show.Double,
-                             Sexy.Instances.Show.Either,
-                             Sexy.Instances.Show.Integer,
-                             Sexy.Instances.Show.Int,
-                             Sexy.Instances.Show.List,
-                             Sexy.Instances.Show.Maybe,
-                           Sexy.Instances.Apply,
-                             Sexy.Instances.Apply.Function,
-                             Sexy.Instances.Apply.List,
-                           Sexy.Instances.Functor,
-                             Sexy.Instances.Functor.List,
-                             Sexy.Instances.Functor.Maybe,
-                             Sexy.Instances.Functor.Either,
-                             Sexy.Instances.Functor.Function,
-                             Sexy.Instances.Functor.IO,
-                           Sexy.Instances.Pure,
-                             Sexy.Instances.Pure.Function,
-                             Sexy.Instances.Pure.Maybe,
-                             Sexy.Instances.Pure.Either,
-                             Sexy.Instances.Pure.List,
-                             Sexy.Instances.Pure.IO,
-                           Sexy.Instances.Applicative,
-                             Sexy.Instances.Applicative.Function,
-                             Sexy.Instances.Applicative.Maybe,
-                             Sexy.Instances.Applicative.Either,
-                             Sexy.Instances.Applicative.List,
-                             Sexy.Instances.Applicative.IO,
-                           Sexy.Instances.Monad,
-                             Sexy.Instances.Monad.Function,
-                             Sexy.Instances.Monad.Maybe,
-                             Sexy.Instances.Monad.Either,
-                             Sexy.Instances.Monad.List,
-                             Sexy.Instances.Monad.IO,
-                           Sexy.Instances.Category,
-                             Sexy.Instances.Category.Function
-                           Sexy.Instances.Nil,
-                             Sexy.Instances.Nil.List,
-                             Sexy.Instances.Nil.Maybe,
-                             Sexy.Instances.Nil.Either,
-                             Sexy.Instances.Nil.Int,
-                             Sexy.Instances.Nil.Unit,
-                             Sexy.Instances.Nil.Function,
-                           Sexy.Instances.Cons,
-                             Sexy.Instances.Cons.List,
-                           Sexy.Instances.UnconsMay,
-                             Sexy.Instances.UnconsMay.List,
-                             Sexy.Instances.UnconsMay.Maybe,
-                             Sexy.Instances.UnconsMay.Either,
-                           Sexy.Instances.Monoid,
-                             Sexy.Instances.Monoid.List,
-                             Sexy.Instances.Monoid.Maybe,
-                             Sexy.Instances.Monoid.Either,
-                             Sexy.Instances.Monoid.Function,
-                           Sexy.Instances.Eq,
-                             Sexy.Instances.Eq.Int,
-                             Sexy.Instances.Eq.Char,
-                             Sexy.Instances.Eq.Maybe,
-                             Sexy.Instances.Eq.Either,
-                             Sexy.Instances.Eq.List,
-                           Sexy.Instances.Subtract,
-                             Sexy.Instances.Subtract.Int
-
   extensions:          NoImplicitPrelude, TypeOperators, UnboxedTuples,
                        TypeFamilies
   ghc-options:         -Wall -fno-warn-orphans
   build-depends:       ghc-prim == 0.2.*, base == 4.5.*
+
+  exposed-modules:
+    Sexy,
+
+
+      Sexy.Data,
+
+        Sexy.Data.Basics,
+        Sexy.Data.Bool,
+        Sexy.Data.Either,
+        Sexy.Data.Integer,
+        Sexy.Data.List,
+        Sexy.Data.Maybe,
+        Sexy.Data.String,
+        Sexy.Data.Ordering,
+
+
+      Sexy.Classes,
+
+        Sexy.Classes.BoolC,
+        Sexy.Classes.OrderingC,
+        Sexy.Classes.MaybeC,
+        Sexy.Classes.EitherC,
+        Sexy.Classes.Empty,
+        Sexy.Classes.FromInteger,
+        Sexy.Classes.Plus,
+        Sexy.Classes.Show,
+        Sexy.Classes.Apply,
+        Sexy.Classes.Functor,
+        Sexy.Classes.Pure,
+        Sexy.Classes.Applicative,
+        Sexy.Classes.Monad,
+        Sexy.Classes.Category,
+        Sexy.Classes.Nil,
+        Sexy.Classes.Cons,
+        Sexy.Classes.UnconsMay,
+        Sexy.Classes.Monoid,
+        Sexy.Classes.Eq,
+        Sexy.Classes.Subtract,
+
+
+      Sexy.Instances,
+
+        Sexy.Instances.BoolC,
+          Sexy.Instances.BoolC.Bool,
+
+        Sexy.Instances.OrderingC,
+          Sexy.Instances.OrderingC.Ordering,
+
+        Sexy.Instances.MaybeC,
+          Sexy.Instances.MaybeC.Maybe,
+
+        Sexy.Instances.EitherC,
+          Sexy.Instances.EitherC.Either,
+
+        Sexy.Instances.Empty,
+          Sexy.Instances.Empty.List,
+          Sexy.Instances.Empty.Maybe,
+
+        Sexy.Instances.FromInteger,
+          Sexy.Instances.FromInteger.Double,
+          Sexy.Instances.FromInteger.Int,
+
+        Sexy.Instances.Plus,
+          Sexy.Instances.Plus.Double,
+          Sexy.Instances.Plus.Int,
+          Sexy.Instances.Plus.List,
+          Sexy.Instances.Plus.Function,
+          Sexy.Instances.Plus.Maybe,
+          Sexy.Instances.Plus.Either,
+
+        Sexy.Instances.Show,
+          Sexy.Instances.Show.Bool,
+          Sexy.Instances.Show.Char,
+          Sexy.Instances.Show.Double,
+          Sexy.Instances.Show.Either,
+          Sexy.Instances.Show.Integer,
+          Sexy.Instances.Show.Int,
+          Sexy.Instances.Show.List,
+          Sexy.Instances.Show.Maybe,
+
+        Sexy.Instances.Apply,
+          Sexy.Instances.Apply.Function,
+          Sexy.Instances.Apply.List,
+
+        Sexy.Instances.Functor,
+          Sexy.Instances.Functor.List,
+          Sexy.Instances.Functor.Maybe,
+          Sexy.Instances.Functor.Either,
+          Sexy.Instances.Functor.Function,
+          Sexy.Instances.Functor.IO,
+
+        Sexy.Instances.Pure,
+          Sexy.Instances.Pure.Function,
+          Sexy.Instances.Pure.Maybe,
+          Sexy.Instances.Pure.Either,
+          Sexy.Instances.Pure.List,
+          Sexy.Instances.Pure.IO,
+
+        Sexy.Instances.Applicative,
+          Sexy.Instances.Applicative.Function,
+          Sexy.Instances.Applicative.Maybe,
+          Sexy.Instances.Applicative.Either,
+          Sexy.Instances.Applicative.List,
+          Sexy.Instances.Applicative.IO,
+
+        Sexy.Instances.Monad,
+          Sexy.Instances.Monad.Function,
+          Sexy.Instances.Monad.Maybe,
+          Sexy.Instances.Monad.Either,
+          Sexy.Instances.Monad.List,
+          Sexy.Instances.Monad.IO,
+
+        Sexy.Instances.Category,
+          Sexy.Instances.Category.Function,
+
+        Sexy.Instances.Nil,
+          Sexy.Instances.Nil.List,
+          Sexy.Instances.Nil.Maybe,
+          Sexy.Instances.Nil.Either,
+          Sexy.Instances.Nil.Int,
+          Sexy.Instances.Nil.Unit,
+          Sexy.Instances.Nil.Function,
+
+        Sexy.Instances.Cons,
+          Sexy.Instances.Cons.List,
+
+        Sexy.Instances.UnconsMay,
+          Sexy.Instances.UnconsMay.List,
+          Sexy.Instances.UnconsMay.Maybe,
+          Sexy.Instances.UnconsMay.Either,
+
+        Sexy.Instances.Monoid,
+          Sexy.Instances.Monoid.List,
+          Sexy.Instances.Monoid.Maybe,
+          Sexy.Instances.Monoid.Either,
+          Sexy.Instances.Monoid.Function,
+
+        Sexy.Instances.Eq,
+          Sexy.Instances.Eq.Int,
+          Sexy.Instances.Eq.Char,
+          Sexy.Instances.Eq.Maybe,
+          Sexy.Instances.Eq.Either,
+          Sexy.Instances.Eq.List,
+
+        Sexy.Instances.Subtract,
+          Sexy.Instances.Subtract.Int
+
+-- description:        Coming soon!
+
