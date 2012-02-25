@@ -1,5 +1,8 @@
 module Sexy.Classes (module X) where
 
+import Sexy.Classes.BoolC as X
+import Sexy.Classes.OrderingC as X
+
 import Sexy.Classes.Show as X
 import Sexy.Classes.FromInteger as X
 import Sexy.Classes.Plus as X

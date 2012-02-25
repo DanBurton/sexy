@@ -1,11 +1,13 @@
 module Sexy.Instances.Eq.List () where
 
-import Sexy.Classes (Eq(..))
-import Sexy.Data (Bool(..), otherwise)
+import Sexy.Classes (Eq(..), BoolC(..))
+import Sexy.Instances.BoolC.Bool ()
+import Sexy.Data (otherwise)
+
 
 instance (Eq a) => Eq [a] where
-  [] == []      = True
+  [] == []      = true
   (x:xs) == (y:ys)
     | x == y    = xs == ys
-    | otherwise = False
-  _ == _        = False
+    | otherwise = false
+  _ == _        = false

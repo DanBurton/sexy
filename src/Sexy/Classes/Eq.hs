@@ -1,7 +1,6 @@
 module Sexy.Classes.Eq (Eq(..)) where
 
-import Sexy.Data (Bool)
-
+import Sexy.Classes.BoolC (BoolC)
 
 class Eq a where
-  (==) :: a -> a -> Bool
+  (==) :: BoolC b => a -> a -> b
