@@ -117,6 +117,8 @@ library
                              Sexy.Instances.Cons.List,
                            Sexy.Instances.UnconsMay,
                              Sexy.Instances.UnconsMay.List,
+                             Sexy.Instances.UnconsMay.Maybe,
+                             Sexy.Instances.UnconsMay.Either,
                            Sexy.Instances.Monoid,
                              Sexy.Instances.Monoid.List,
                            Sexy.Instances.Eq,
