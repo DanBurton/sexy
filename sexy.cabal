@@ -89,6 +89,8 @@ library
                            Sexy.Instances.Pure,
                              Sexy.Instances.Pure.Function,
                              Sexy.Instances.Pure.Maybe,
+                             Sexy.Instances.Pure.Either,
+                             Sexy.Instances.Pure.List,
                            Sexy.Instances.Applicative,
                              Sexy.Instances.Applicative.Function,
                            Sexy.Instances.Monad,
