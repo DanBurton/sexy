@@ -8,5 +8,4 @@ import Sexy.Data.Maybe as X
 import Sexy.Data.List as X
 import Sexy.Data.String as X
 import Sexy.Data.Ordering as X
-import Sexy.Data.Unit as X
 import GHC.Types as X (Int(..), Double(..), Char(..))
