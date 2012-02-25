@@ -1,4 +1,4 @@
 module Sexy.Instances.Empty () where
 
 import Sexy.Instances.Empty.Maybe ()
-{- etc -}
+import Sexy.Instances.Empty.List ()
