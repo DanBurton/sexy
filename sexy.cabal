@@ -48,6 +48,7 @@ library
                            Sexy.Classes.UnconsMay,
                            Sexy.Classes.Monoid,
                            Sexy.Classes.Eq,
+                           Sexy.Classes.Subtract,
                          Sexy.Instances,
                            Sexy.Instances.BoolC,
                              Sexy.Instances.BoolC.Bool,
@@ -79,6 +80,7 @@ library
                              Sexy.Instances.Show.Maybe,
                            Sexy.Instances.Apply,
                              Sexy.Instances.Apply.Function,
+                             Sexy.Instances.Apply.List,
                            Sexy.Instances.Functor,
                              Sexy.Instances.Functor.List,
                              Sexy.Instances.Functor.Maybe,
@@ -111,7 +113,9 @@ library
                              Sexy.Instances.Eq.Char,
                              Sexy.Instances.Eq.Maybe,
                              Sexy.Instances.Eq.Either,
-                             Sexy.Instances.Eq.List
+                             Sexy.Instances.Eq.List,
+                           Sexy.Instances.Subtract,
+                             Sexy.Instances.Subtract.Int
 
   extensions:          NoImplicitPrelude, TypeFamilies, TypeOperators
   ghc-options:         -Wall -fno-warn-orphans

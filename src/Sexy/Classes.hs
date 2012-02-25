@@ -22,3 +22,4 @@ import Sexy.Classes.Cons as X
 import Sexy.Classes.UnconsMay as X
 import Sexy.Classes.Monoid as X
 import Sexy.Classes.Eq as X
+import Sexy.Classes.Subtract as X
