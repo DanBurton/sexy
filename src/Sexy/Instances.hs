@@ -3,6 +3,7 @@ module Sexy.Instances () where
 import Sexy.Instances.BoolC ()
 import Sexy.Instances.OrderingC ()
 import Sexy.Instances.MaybeC ()
+import Sexy.Instances.EitherC ()
 
 import Sexy.Instances.Empty ()
 
