@@ -69,6 +69,8 @@ library
                              Sexy.Instances.Plus.Int,
                              Sexy.Instances.Plus.List,
                              Sexy.Instances.Plus.Function,
+                             Sexy.Instances.Plus.Maybe,
+                             Sexy.Instances.Plus.Either,
                            Sexy.Instances.Show,
                              Sexy.Instances.Show.Bool,
                              Sexy.Instances.Show.Char,
