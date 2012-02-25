@@ -43,7 +43,6 @@ library
                            Sexy.Classes.Monad,
                            Sexy.Classes.Category,
                            Sexy.Classes.Nil,
-                           Sexy.Classes.HasElem,
                            Sexy.Classes.Cons,
                            Sexy.Classes.UnconsMay,
                            Sexy.Classes.Monoid,
@@ -116,11 +115,6 @@ library
                              Sexy.Instances.Nil.Int,
                              Sexy.Instances.Nil.Unit,
                              Sexy.Instances.Nil.Function,
-                           Sexy.Instances.HasElem,
-                             Sexy.Instances.HasElem.List,
-                             Sexy.Instances.HasElem.Maybe,
-                             Sexy.Instances.HasElem.Either,
-                             Sexy.Instances.HasElem.Function,
                            Sexy.Instances.Cons,
                              Sexy.Instances.Cons.List,
                            Sexy.Instances.UnconsMay,
@@ -141,7 +135,6 @@ library
                            Sexy.Instances.Subtract,
                              Sexy.Instances.Subtract.Int
 
-  extensions:          NoImplicitPrelude, TypeFamilies, TypeOperators,
-                       UnboxedTuples
+  extensions:          NoImplicitPrelude, TypeOperators, UnboxedTuples
   ghc-options:         -Wall -fno-warn-orphans
   build-depends:       ghc-prim == 0.2.*, base == 4.5.*
