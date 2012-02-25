@@ -12,3 +12,6 @@ class (Pure m, Empty m) => MaybeC m where
   nothing = nil
 
   maybe :: (a -> b) -> b -> m a -> b
+
+  fromJust :: a -> m a -> a
+  fromJust = maybe (\x -> x)
