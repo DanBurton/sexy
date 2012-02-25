@@ -5,7 +5,7 @@ synopsis:            A Sexier Prelude
 -- description:         
 
 homepage:            https://github.com/DanBurton/sexy
-license:             AllRightsReserved
+license:             BSD3
 license-file:        LICENSE
 author:              Dan Burton
 maintainer:          danburton.email@gmail.com
