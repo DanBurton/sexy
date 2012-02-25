@@ -2,6 +2,9 @@ module Sexy.Classes (module X) where
 
 import Sexy.Classes.BoolC as X
 import Sexy.Classes.OrderingC as X
+import Sexy.Classes.MaybeC as X
+
+import Sexy.Classes.Empty as X
 
 import Sexy.Classes.Show as X
 import Sexy.Classes.FromInteger as X

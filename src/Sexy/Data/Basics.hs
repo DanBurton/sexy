@@ -4,10 +4,10 @@ module Sexy.Data.Basics (
   , asTypeIn
   , asAppliedTo
   , undefined
-  , module Prelude
+  , module P
   ) where
 
-import Prelude (seq, error)
+import qualified Prelude as P (seq, error)
 
 const :: a -> b -> a
 const x _ = x
@@ -22,4 +22,4 @@ asTypeIn :: a -> (a -> b) -> a
 asTypeIn = const
 
 undefined :: a
-undefined = error "Sexy.undefined"
+undefined = P.error "Sexy.undefined"

@@ -2,6 +2,9 @@ module Sexy.Instances () where
 
 import Sexy.Instances.BoolC ()
 import Sexy.Instances.OrderingC ()
+import Sexy.Instances.MaybeC ()
+
+import Sexy.Instances.Empty ()
 
 import Sexy.Instances.Show ()
 import Sexy.Instances.FromInteger ()
