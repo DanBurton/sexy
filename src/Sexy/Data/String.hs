@@ -1,4 +1,3 @@
-module Sexy.Data.String (String) where
+module Sexy.Data.String (module X) where
 
-import GHC.Types (Char)
-type String = [Char]
+import Prelude as X (String)

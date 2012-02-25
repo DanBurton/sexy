@@ -88,21 +88,25 @@ library
                              Sexy.Instances.Functor.Maybe,
                              Sexy.Instances.Functor.Either,
                              Sexy.Instances.Functor.Function,
+                             Sexy.Instances.Functor.IO,
                            Sexy.Instances.Pure,
                              Sexy.Instances.Pure.Function,
                              Sexy.Instances.Pure.Maybe,
                              Sexy.Instances.Pure.Either,
                              Sexy.Instances.Pure.List,
+                             Sexy.Instances.Pure.IO,
                            Sexy.Instances.Applicative,
                              Sexy.Instances.Applicative.Function,
                              Sexy.Instances.Applicative.Maybe,
                              Sexy.Instances.Applicative.Either,
                              Sexy.Instances.Applicative.List,
+                             Sexy.Instances.Applicative.IO,
                            Sexy.Instances.Monad,
                              Sexy.Instances.Monad.Function,
                              Sexy.Instances.Monad.Maybe,
                              Sexy.Instances.Monad.Either,
                              Sexy.Instances.Monad.List,
+                             Sexy.Instances.Monad.IO,
                            Sexy.Instances.Category,
                              Sexy.Instances.Category.Function
                            Sexy.Instances.Nil,
@@ -137,6 +141,7 @@ library
                            Sexy.Instances.Subtract,
                              Sexy.Instances.Subtract.Int
 
-  extensions:          NoImplicitPrelude, TypeFamilies, TypeOperators
+  extensions:          NoImplicitPrelude, TypeFamilies, TypeOperators,
+                       UnboxedTuples
   ghc-options:         -Wall -fno-warn-orphans
   build-depends:       ghc-prim == 0.2.*, base == 4.5.*
