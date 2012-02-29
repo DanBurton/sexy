@@ -1,7 +1,7 @@
 module Sexy.Instances.Applicative.IO () where
 
 import Sexy.Data (IO(..))
-import Sexy.Classes (Applicative(..), Functor(..))
+import Sexy.Classes (Applicative(..))
 import Sexy.Instances.Functor.IO ()
 import Sexy.Instances.Pure.IO ()
 

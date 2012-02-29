@@ -33,6 +33,14 @@ library
   exposed-modules:
     Sexy,
 
+      Sexy.Core,
+
+
+      Sexy.Functions,
+        Sexy.Functions.List,
+        Sexy.Functions.Maybe,
+        Sexy.Functions.Bool,
+
 
       Sexy.Data,
 
@@ -53,6 +61,7 @@ library
         Sexy.Classes.MaybeC,
         Sexy.Classes.EitherC,
         Sexy.Classes.Empty,
+        Sexy.Classes.DesnocMay,
         Sexy.Classes.FromInteger,
         Sexy.Classes.Plus,
         Sexy.Classes.Show,
@@ -68,6 +77,7 @@ library
         Sexy.Classes.Monoid,
         Sexy.Classes.Eq,
         Sexy.Classes.Subtract,
+        Sexy.Classes.List,
 
 
       Sexy.Instances,
@@ -87,6 +97,10 @@ library
         Sexy.Instances.Empty,
           Sexy.Instances.Empty.List,
           Sexy.Instances.Empty.Maybe,
+
+        Sexy.Instances.DesnocMay,
+          Sexy.Instances.DesnocMay.List,
+          Sexy.Instances.DesnocMay.Maybe,
 
         Sexy.Instances.FromInteger,
           Sexy.Instances.FromInteger.Double,
@@ -175,7 +189,11 @@ library
           Sexy.Instances.Eq.List,
 
         Sexy.Instances.Subtract,
-          Sexy.Instances.Subtract.Int
+          Sexy.Instances.Subtract.Int,
+
+        Sexy.Instances.List,
+          Sexy.Instances.List.List
+        
 
 -- description:        Coming soon!
 

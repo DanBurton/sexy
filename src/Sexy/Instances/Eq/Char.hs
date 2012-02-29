@@ -2,6 +2,7 @@ module Sexy.Instances.Eq.Char () where
 
 import Sexy.Classes (Eq(..), BoolC(..))
 import Sexy.Data (Char)
+import Sexy.Instances.BoolC.Bool ()
 
 import qualified Prelude as P
 

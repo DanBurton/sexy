@@ -6,6 +6,7 @@ import Sexy.Classes.MaybeC as X
 import Sexy.Classes.EitherC as X
 
 import Sexy.Classes.Empty as X
+import Sexy.Classes.DesnocMay as X
 
 import Sexy.Classes.Show as X
 import Sexy.Classes.FromInteger as X
@@ -22,3 +23,4 @@ import Sexy.Classes.UnconsMay as X
 import Sexy.Classes.Monoid as X
 import Sexy.Classes.Eq as X
 import Sexy.Classes.Subtract as X
+import Sexy.Classes.List as X

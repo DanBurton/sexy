@@ -6,6 +6,7 @@ import Sexy.Instances.MaybeC ()
 import Sexy.Instances.EitherC ()
 
 import Sexy.Instances.Empty ()
+import Sexy.Instances.DesnocMay ()
 
 import Sexy.Instances.Show ()
 import Sexy.Instances.FromInteger ()
@@ -22,3 +23,4 @@ import Sexy.Instances.UnconsMay ()
 import Sexy.Instances.Monoid ()
 import Sexy.Instances.Eq ()
 import Sexy.Instances.Subtract ()
+import Sexy.Instances.List ()

@@ -1,5 +1,4 @@
 module Sexy (module X) where
 
-import Sexy.Data as X
-import Sexy.Classes as X
-import Sexy.Instances ()
+import Sexy.Core as X
+import Sexy.Functions as X
