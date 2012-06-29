@@ -4,10 +4,9 @@
     {-# LANGUAGE NoImplicitPrelude #-}
     import Sexy
 
-Sexy is still being heavily developed.
-Check back in a few days,
-and hopefully I will get a stable version
-up on hackage.
+I've sort of given up on this project for now,
+but I reserve the right to pick it back up
+sometime in the arbitrary future.
 
 Patches and comments are most welcome.
 
