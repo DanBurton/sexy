@@ -19,7 +19,7 @@ you should also check out:
 * [The Other Prelude](http://www.haskell.org/haskellwiki/The_Other_Prelude)
 * [Numeric Prelude](http://www.haskell.org/haskellwiki/Numeric_Prelude)
 * [Classy Prelude](https://github.com/snoyberg/classy-prelude)
-* [Modular Prelude](https://github.com/snoyberg/classy-prelude)
+* [Modular Prelude](https://github.com/DanBurton/modular-prelude)
 
 <hr />
 
