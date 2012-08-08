@@ -18,6 +18,8 @@ you should also check out:
 * [Overture](https://github.com/isomorphism/Overture)
 * [The Other Prelude](http://www.haskell.org/haskellwiki/The_Other_Prelude)
 * [Numeric Prelude](http://www.haskell.org/haskellwiki/Numeric_Prelude)
+* [Classy Prelude](https://github.com/snoyberg/classy-prelude)
+* [Modular Prelude](https://github.com/snoyberg/classy-prelude)
 
 <hr />
 
